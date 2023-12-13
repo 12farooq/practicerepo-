@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{overflow: auto;
+        display: flex;}
+        .menubar{float: none;
+        width: auto;}
+        .menubar ul{
+            margin: 0;
+            padding: 0;
+        }
+        .menubar ul li{
+            list-style: none;
+            background-color: rgb(148, 227, 227);
+            border: 1px solid gainsboro;
+            margin: 2px;
+            padding: 5px;
+            box-sizing: border-box;
+
+        }
+        .content{
+            /* background-color: aquamarine; */
+            border: 1px solid black;
+            color: black;
+            text-align: center;
+            word-wrap: break-word;
+            background-color: blue;
+           
+        }
+        @media  screen and (max-width:1200px) {
+            .content{
+                background-color: aqua;
+               
+            }
+            .menubar{
+                width: auto;
+            }
+            
+        }
+        /* @media  screen and (max-width:1000px) {
+            .content{
+                background-color: rgb(161, 44, 63);
+            }
+            
+        }
+        @media  screen and (max-width:700px) {
+            .content{
+                background-color: lightcyan;
+            }
+            
+        } */
+        @media  screen and (max-width:600px) {
+            
+            .content{
+                background-color: lightpink;
+
+            }
+            .menubar{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="box">
+    <div class="menubar">
+        <ul>
+            <li>menulist</li>
+            <li>menulist</li>
+            <li>menulist</li>
+            <li>menulist</li>
+        </ul>
+    </div>
+    <div class="content">
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore corrupti, assumenda maxime magnam error excepturi quae nobis deserunt repellat hic deleniti nulla possimus. Quam earum similique delectus nobis optio asperiores.</p>
+    </div>
+   </div> 
+</body>
+</html>

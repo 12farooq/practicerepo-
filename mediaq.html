@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image{
+            height: 225px;
+            width: 225px;
+        }
+        .box1{
+            width: 30%;
+            background-color: antiquewhite;
+            /* border: 2px solid red; */
+            text-align: justify;
+        }
+        .box2{
+            width: 30%;
+            background-color: antiquewhite;
+            /* border: 2px solid red; */
+            text-align: justify;
+        }
+        .box3{
+            width: 30%;
+            background-color: antiquewhite;
+            /* border: 2px solid red; */
+            text-align: justify;
+        }
+        .main{
+            display: flex;
+            justify-content: space-around;
+        }
+        @media (max-width:480px) {
+            .main{display: flex;
+            flex-direction: column;}
+            .box1,.box2,.box3{width: 100%;}
+            .box2{margin: 20px 0px;}
+            .image{width: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box1">
+        <img src="images/brush.jpg" alt="brush" class="image">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi quisquam saepe vel iure sunt, amet officia maxime atque et facilis commodi beatae praesentium ab ipsa accusantium libero aperiam sequi.</p>
+    </div>
+    <div class="box2">
+        <img src="images/images.jpg" alt="camera" >
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi quisquam saepe vel iure sunt, amet officia maxime atque et facilis commodi beatae praesentium ab ipsa accusantium libero aperiam sequi.</p>
+    </div>
+    <div class="box3">
+        <img src="images/coloredhand.jpg" alt="coloredhand" class="image">
+        <h2>heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi quisquam saepe vel iure sunt, amet officia maxime atque et facilis commodi beatae praesentium ab ipsa accusantium libero aperiam sequi.</p>
+    </div>
+</div>
+</body>
+</html>

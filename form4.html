@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        .main{
+            height: 500px;
+            width: 800px;
+            
+            display: flex;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+           position: relative;
+           top: 50px;
+           left: 150px;
+           /* border-radius: 20px; */
+        }
+        .first{
+            flex: 50%;
+            background-color: rgb(19, 121, 161);
+            box-sizing: border-box;
+            color: white;
+            /* border-radius: 10%; */
+            padding: 10px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+        }
+        .second{
+            flex: 50%;
+            background-color: rgb(107, 112, 114);
+            box-sizing: border-box;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            
+        }
+        p{
+
+            text-align: justify;
+            
+        }
+        button{
+            height: 40px;
+            width: 150px;
+            border-radius: 15px;
+            margin-left: 30%;
+            cursor: pointer;
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            margin: 10px;
+        }
+        input{
+            margin: 10px;
+            width: 50%;
+            height: 20px;
+        }
+        .button{
+            height: 30px;
+           
+        }
+        @media (max-width:480px) {
+            .main{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            .first{
+                width: 100%;
+            }
+            .second{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">
+            <h1>INFORMATION</h1>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est illum mollitia provident tenetur laborum hic minus, consectetur nostrum magnam sint non porro repellendus assumenda laboriosam harum fugit esse veniam veritatis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, fugit distinctio. Mollitia maiores consectetur soluta deleniti odio eos, harum exercitationem voluptate velit nihil recusandae consequuntur blanditiis, culpa magni vero laudantium.
+            </p>
+            <button>Have an account</button>
+        </div>
+        <div class="second">
+            <h1>REGISTER FORM</h1>
+            <form action="#">
+                <label for="fname" !important>First Name:</label>
+                <input type="text" ><br>
+                <label for="lname">Last Name:</label>
+                <input type="text"><br>
+                <label for="yemail">Your Email:</label>
+                <input type="email"><br>
+                <label for="passward">Passward:</label>
+                <input type="password"><br>
+                <label for="yemail">Confirm Passward:</label>
+                <input type="password"><br>
+                <!-- <button>Register</button> -->
+                <input type="button" class="button" value="Register">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

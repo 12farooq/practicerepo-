@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the cafe</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .nav{
+            display: grid;
+            grid-template-columns: 20%  20%  20%  20% ;
+            /* grid-template-rows: 10vh; */
+            column-gap: 10px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            justify-content: space-evenly;
+            cursor: pointer;
+        }
+        .header{
+            background-image: url('images/coffeehouse.jpg');
+            height: 60vh;
+        }
+        .header>h1{
+            margin: 0;
+            font-size: 70px;
+            color: white;
+            font-weight: normal;
+            text-align: center;
+           position: absolute;
+           
+             top: 190px;
+            left: 41%;
+        }
+        .header>h4{
+            position: absolute;
+            bottom: 190px;
+            left: 10px;
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            padding: 5px;
+            width: fit-content;
+            margin: 0;
+        }
+        .about{
+            padding:0 15%;     
+        }
+        .about>p{
+            text-align: justify;
+           letter-spacing: 5px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 20px;
+           color: gray;
+        }
+        .about>h2{
+            box-shadow: 10px 10px 15px rgb(228, 170, 170);
+            padding: 5px;
+            text-align: center;
+        }
+        .about>section{
+            text-align: justify;
+           word-spacing: 5px;
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 20px;
+           color: gray;
+           border-left: 3px solid black;
+           background-color: rgb(238, 227, 212);
+           padding: 20px;
+           margin: 40px 0;
+
+        }
+        .menu{
+            padding: 10px 15%;
+            /* border: 1px solid red; */
+            
+        }
+        .menu>h1{
+            text-align: center;
+        }
+        .eat{
+            /* border: 1px solid red; */
+            padding: 20px;
+            width: 70%;
+            box-shadow: 5px 5px 5px silver inset;
+           
+            margin: 50px;
+        }
+        .eat>h5{
+            font-size: 20px;
+            color:gray;
+            text-decoration: underline;
+            letter-spacing: 3px;
+        }
+        .eat>p{
+            font-size: 20px;
+            color:gray;
+        }
+        .location{
+            padding: 0 15%;
+        }
+        .location>input{
+            padding: 20px;
+             width: 100%;
+              border: 1px solid gray ; 
+              margin: 10px 0;
+              font-size: 15px;
+        }
+        .location>h2{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .location>p{
+            /* background-color: black;
+            color: white;
+            text-align: center; */
+            /* padding: 12px; */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="item">HOME</div>
+        <div class="item">ABOUT</div>
+        <div class="item">MENU</div>
+        <div class="item">WHERE</div>
+    </div>
+
+    <div class="header">
+        <h1>the cafe</h1>
+        <h4>open from 6am and 5pm</h4>
+    </div>
+
+    <div class="about">
+        <h2>ABOUT THE CAFE</h2>
+        <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+            In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+            <section>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet. <br><br>
+
+                Chef, Coffeeist and Owner: Liam Brown</section>
+                <img src="images/coffeeshop.jpg" alt="coffeeshop" style="width: 100%;">
+                <h3>Opening hours:  everyday from 6am to 5pm.</h3>
+
+                <h3> Address:15 Adr street, 5015, NY</h3>
+    </div>
+
+    <div class="menu">
+        <h1>THE MENU</h1>
+        <div class="eat">
+            <h3  style="background-color: gray; padding: 5px; box-shadow: 5px 5px 5px rebeccapurple;">EAT</h3>
+
+           <h5> Bread Basket</h5>
+            <p>Assortment of fresh baked fruit breads and muffins 5.50</p>
+
+
+            <h5>Honey Almond Granola with Fruits</h5>
+            <p>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p>
+
+
+            <h5>Belgian Waffle</h5>
+            <p>Vanilla flavored batter with malted flour 7.50</p>
+
+
+            <h5>Scrambled eggs</h5>
+            <p>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p>
+
+
+            <h5>Blueberry Pancakes</h5>
+            <p>With syrup, butter and lots of berries 8.50</p>
+        </div>
+        <img src="images/coffeehouse2.jpg" alt="" style="width: 100%;">
+    </div>
+
+
+    <div class="location">
+        <h2>WHERE TO FIND US</h2>
+        <p>Find us at some address at some place.</p>
+        <img src="images/map.jpg" alt="" style="width: 100%;">
+        <p> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p>Reserve a table, ask for today's special or just send us a message:</p>
+        <input type="text" placeholder="Name"  >
+        <input type="number" placeholder="HOW MANY PEOPLE"  >
+        <input type="datetime-local">
+        <input type="text" placeholder="Message/ Special requirement">
+        <button  style="padding: 20px; border: 1px solid gray ;background-color: black; color: white;  margin: 10px 0;">SEND MESSAGE</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displey grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: antiquewhite;
+            font-family: cursive;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto 41% auto;
+            padding: 30px;
+            background-color: gray;
+            gap: 30px;
+        }
+        .grid-item{
+            font-size: 30px;
+            padding: 10px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        #header{
+            grid-column:1 / 4 ;
+        }
+        #menu{
+            grid-column:1 / 2 ;
+            grid-row: 2 / 4;
+        }
+        
+        #footer{
+            grid-column:2 / 4 ;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="header">Header</div>
+        <div class="grid-item" id="menu">Menu</div>
+        <div class="grid-item" id="main">Main</div>
+        <div class="grid-item" id="right">Right</div>
+        <div class="grid-item" id="footer">Footer</div>
+    </div>
+</body>
+</html>

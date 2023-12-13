@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <title>Church</title>
+<style>
+  *{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+  }
+  .card-img-overlay{
+    opacity: .8;
+    font-weight: bold;
+    
+    word-wrap: break-word;
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    line-height: 50px;
+    word-spacing: 25px;
+  }
+  .card-img-overlay>p{
+
+    font-size: 40px;
+  }
+.about{
+  border-bottom: 1px solid black; 
+ 
+}
+    .about>.col-md-6>.card-mb-3{
+    /* margin: 10px; */
+    /* padding: 20px; */
+    text-align: right;
+    border-bottom: 1px solid black; 
+  }
+  .about-text-icon{
+    background-color: rgb(70, 139, 116);
+    border-radius: 50%;
+    font-size: 30px;  margin: 10px; padding: 30px;
+    color: aliceblue;
+  }
+  .about-text{
+    padding-top: 15px;
+    padding-left: 10%;
+  }
+  .description{
+    /* border: 1px solid rgb(117, 28, 28); */
+    padding: 5px 10%; 
+    height: fit-content;
+  }
+  .description-image{
+    /* border: 2px solid black; */
+   height: fit-content;
+  }
+  .description-text{
+    /* border: 1px solid black;  */
+    padding:10% 50px;
+  
+  }
+
+  .description-text>.card>.card-body>.card-text{
+    font-size: 18px;
+    color: gray;
+    text-align: left;
+  }
+  .description-text-list{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aquamarine; */
+    font-size: 25px;
+    
+  }
+  .list{
+    /* background-color: rgb(174, 225, 208); */
+    border-bottom: 1px solid black; 
+    padding: 10px;
+  }
+ .quote{
+  padding: 10px;
+ }
+ .quote-text{
+  color: rgb(136, 216, 188);
+  font-weight: bold;
+  /* font-size: 20px; */
+ }
+ .quote-title{
+  font-family: 'Times New Roman', Times, serif;
+ }
+ .main{
+  padding: 2% 10% 5% 10%;
+  /* border: 3px solid rebeccapurple; */
+ }
+ .main-text{
+  
+ }
+.project-box{
+  /* border: 2px solid red; */
+}
+.project-box>.card-body{
+  /* padding-left: 10%; */
+  padding-left: 15%;
+  /* border: 2px solid gray; */
+  margin-top: -80%;
+ background-color: white;
+ width: 80%;
+  margin-left: 20%;
+  box-shadow: 2px 2px 2px silver;
+}
+.home{
+  background-image: url('images/bg_1.jpg.webp');
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-attachment: fixed;
+            opacity: .6;
+           height: 100vh;
+           padding-top: 10%;
+            padding-left: 3%;
+           
+}
+.testimonial {
+  background-image: url('images/bg_1.jpg.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 100%;
+    }
+</style>
+
+</head>
+<body>
+<!-- nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand " href="#" style="font-weight: 900; color: black;    font-weight: 900;
+  font-size: 23px;
+  margin: 0;">VINEYARD <span class="text-primary">.</span></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#service">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#team">Team</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- home-->
+<div class="home">
+  <div class="" >
+    <div class="card-body ">
+      <button type="button" class="btn btn-light btn-lg"><i class="fa-regular fa-circle-play"></i> Watch our latest sermon</button>
+      <h1 class="card-title">LOVING GOD, LOVING OTHERS, SERVING GOD WITH ALL YOUR HEART</h1>
+      <p class="card-text " style="font-size: 30px; color: grey;">Submit your presence to the creator of the universe</p>
+      <a href="#" class="btn btn-primary btn-lg" >Get Started</a>
+     
+    </div>
+  </div>
+</div>
+
+
+<!-- about   -->
+   <div class="row justify-content-space-around about" id="about">
+    <!--  about-text-->
+    <div class="col-md-6 about-text">
+
+
+      <div class="card-mb-3 about-text-2" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">DAILY PRAYERS</h5>
+              <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+          <div class="col-md-4 icon">
+            <i class="fa-solid fa-hands-praying about-text-icon "></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-mb-3 about-text-2" style="max-width: 540px;">
+        <div class="row no-gutters">
+          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">CHURCH COMMUNIT</h5>
+              <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+             
+            </div>
+          </div>
+          <div class="col-md-4 icon">
+            <i class="fa-solid fa-church about-text-icon"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card-mb-3 about-text-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">TEACHING</h5>
+              <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+             
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <i class="fa-solid fa-book-bible about-text-icon"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card-mb-3 about-text-4" style="max-width: 540px;">
+        <div class="row no-gutters">
+          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">HELPERS</h5>
+              <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+          <div class="col-md-4 ">
+            <i class="fa-solid fa-handshake-angle about-text-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-mb-3 about-text-5" style="max-width: 540px;">
+        <div class="row no-gutters">
+          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">WEDDING</h5>
+              <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+          <div class="col-md-4 icon">
+            <i class="fa-solid fa-cheese about-text-icon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-mb-3 about-text-6" style="max-width: 540px;">
+        <div class="row no-gutters">
+          
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">EVENTS</h5>
+              <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+          </div>
+          <div class="col-md-4 icon">
+            <i class="fa-solid fa-bullhorn about-text-icon" ></i>
+          </div>
+        </div>
+      </div>
+<!-- about-text end -->
+      
+    </div>
+<!-- about-image -->
+    <div class="col-md-6 about-image p-4">
+    <img src="images/about.jpg.webp" alt=""  style="width: 100%;">
+    </div>
+   </div>
+
+
+<!-- seremon -->
+   <div class="row description" id="seremon">
+<!-- seremon-image -->
+    <div class="col-md-6 description-image">
+      <img src="images/about-2.jpg.webp" alt="about-2" style="width: 100%;">
+      </div>
+<!--  seremon-text -->
+    <div class="col-md-6 description-text">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">WE ARE CHURCH THAT BELIEVES IN JESUS CHRIST</h2>
+          <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+         
+        </div>
+      </div>
+        <!-- seremon-text-list -->
+      
+      <div class="description-text-list">
+      
+          <div class="ms-2 me-auto list">
+            <div class="fw-bold text-success">70,000</div>
+            Members
+          </div>
+          <div class="ms-2 me-auto list">
+            <div class="fw-bold text-success">1,000</div>
+            Pastors
+          </div>
+          <div class="ms-2 me-auto list">
+            <div class="fw-bold text-success">100,000</div>
+            Donation
+          </div>
+          <div class="ms-2 me-auto list">
+            <div class="fw-bold text-success">100</div>
+            Churches
+          </div>
+    </div>
+    </div>
+    
+   </div>
+<!-- ministries -->
+   <div class="card text-center quote" id="ministries">
+    <div class="card-body">
+      <p class="card-text quote-text">EXPERIENCE GOD'S PRESENCE</p>
+      <h2 class="card-title quote-title"> SERMON FOR TODAY</h2>
+    </div>
+  </div>
+
+<!-- main -->
+<div class="row main" id="ministries" style="justify-content: center;">
+  <div class="card mb-12">
+    <div class="row no-gutters">
+
+      <div class="col-md-6 main-image">
+        <img src="images/sermon-1.jpg.webp" alt="..." style="width: 100%; height: 80%;">
+      </div>
+
+      <div class="col-md-6 main-text">
+        <div class="card-body">
+          <h3 class="card-title" style= "font-weight: bolder;">
+            LORD IS SUFFICIENT FOR ALL OF OUR NEEDS</h3>
+            <p>Sermon from: <span class="card-text text-dark " > Felix Gonner</span></p>
+            <p>Categories: <span class="card-text text-success"> God, Pray</span> </p>
+          <p class="card-text text-success">On Sunday 13 Jan, 2019</p>
+          <p class="card-text "style="font-size: 20px; text-align:justify;">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+
+          <button type="button" class="btn btn-primary btn-lg bg-success text-white"><i class="fa-solid fa-play"></i> Watch sermon</button>
+          <button type="button" class="btn btn-secondary btn-lg"> <i class="fa-solid fa-download"></i> Download Sermon</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- photography -->
+<div class="row">
+  <div class="col-md-3 p-0">
+    <img src="images/insta-1.jpg.webp" alt="" width="100%">
+  </div>
+  <div class="col-md-3 p-0">
+    <img src="images/insta-2.jpg.webp" alt="" width="100%">
+  </div>
+  <div class="col-md-3 p-0">
+    <img src="images/insta-1.jpg.webp" alt="" width="100%">
+  </div>
+  <div class="col-md-3 p-0">
+    <img src="images/insta-4.jpg.webp" alt="" width="100%">
+  </div>
+</div>
+
+
+<section class="testimonial">
+
+  <div style="background-color: rgb(10, 10, 10); opacity: .7; padding: 0 10%;">
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="profile p-4 m-0"
+            style="text-align: center; color:white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <div class=" mb-3">
+              <img src="images/testimonials-1.jpg" alt="..." class="img-fluid rounded-circle m-0" width="120px"
+                style="border: 8px solid gray;opacity:1; ">
+              <div class="card-body">
+                <h1 class="card-title">Smith Goodman</h1>
+                <h3 class="card-title">CEO & founder</h3>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="profile p-4 m-0"
+            style="text-align: center; color:white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <div class=" mb-3">
+              <img src="images/testimonials-2.jpg" alt="..." class="img-fluid rounded-circle m-0" width="120px"
+                style="border: 8px solid gray;opacity:1; ">
+              <div class="card-body">
+                <h1 class="card-title">Sara Willson</h1>
+                <h2 class="card-title">Enterpenure</h2>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="profile p-4 m-0"
+            style="text-align: center; color:white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <div class=" mb-3">
+              <img src="images/testimonials-3.jpg" alt="..." class="img-fluid rounded-circle m-0" width="120px"
+                style="border: 8px solid gray;opacity:1; ">
+              <div class="card-body">
+                <h1 class="card-title">Jane karlis</h1>
+                <h2 class="card-title">Designer</h2>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="profile p-4 m-0"
+            style="text-align: center; color:white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <div class=" mb-3">
+              <img src="images/testimonials-4.jpg" alt="..." class="img-fluid rounded-circle m-0" width="120px"
+                style="border: 8px solid gray;opacity:1; ">
+              <div class="card-body">
+                <h1 class="card-title">Matt Willson</h1>
+                <h3>Freelance</h3>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="profile p-4 m-0"
+            style="text-align: center; color:white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            <div class=" mb-3">
+              <img src="images/testimonials-5.jpg" alt="..." class="img-fluid rounded-circle m-0" width="120px"
+                style="border: 8px solid gray;opacity:1; ">
+              <div class="card-body">
+                <h1 class="card-title">John Larson</h1>
+                <h2 class="card-title">Store owner</h2>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                  additional content. This content is a little bit longer.</p>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- project -->
+<div class="row" id="events" style="justify-content: space-evenly;">
+
+  <div class="card col-md-3 p-0" style="width: 20rem;">
+    <img src="images/event-1.jpg.webp" alt="..."style="width: 100%;" height="50%">
+    <div class="card-body" style="width: 80%; background-color:white; position: relative; left: 20%; margin-top: -20%;">
+      <h5 class="card-title">How To Recover The Cutting Edge</h5>
+          <p class="card-text"> <i class="fa-solid fa-calendar-days"></i><small class="text-muted">   Monday, 8:00 Am - Tuesday, 8:00 Pm</small></p>
+          <p class="card-text text-success"> <i class="fa-solid fa-location-crosshairs"></i><small class=" text-success"> Spring Church</small></p>
+          <p class="card-text"> <i class="fa-solid fa-building"></i><small class="text-muted">  203 Fake St. Mountain View, San Francisco, California, USA</small></p>
+          
+          <button type="button" class="btn btn-secondary btn-sm bg-success text-white"> <i class="fa-solid fa-download "></i>Read more</button>
+    </div>
+  </div>
+  
+  <div class="card col-md-3 p-0" style="width: 20rem;">
+    <img src="images/event-2.jpg.webp" alt="..."style="width: 100%;" height="50%">
+    <div class="card-body" style="width: 80%; background-color:white; position: relative; left: 20%; margin-top: -20%;">
+      <h5 class="card-title">How To Recover The Cutting Edge</h5>
+          <p class="card-text"> <i class="fa-solid fa-calendar-days"></i><small class="text-muted">   Monday, 8:00 Am - Tuesday, 8:00 Pm</small></p>
+          <p class="card-text text-success"> <i class="fa-solid fa-location-crosshairs"></i><small class=" text-success"> Spring Church</small></p>
+          <p class="card-text"> <i class="fa-solid fa-building"></i><small class="text-muted">  203 Fake St. Mountain View, San Francisco, California, USA</small></p>
+          
+          <button type="button" class="btn btn-secondary btn-sm bg-success text-white"> <i class="fa-solid fa-download "></i> Read more</button>
+    </div>
+  </div>
+  
+  <div class="card col-md-3 p-0" style="width: 20rem;">
+    <img src="images/event-3.jpg.webp" alt="..."style="width: 100%;" height="50%">
+    <div class="card-body" style="width: 80%; background-color: white; position: relative; left: 20%; margin-top: -20%; ">
+      <h5 class="card-title">How To Recover The Cutting Edge</h5>
+          <p class="card-text"> <i class="fa-solid fa-calendar-days"></i><small class="text-muted">   Monday, 8:00 Am - Tuesday, 8:00 Pm</small></p>
+          <p class="card-text text-success"> <i class="fa-solid fa-location-crosshairs"></i><small class=" text-success"> Spring Church</small></p>
+          <p class="card-text"> <i class="fa-solid fa-building"></i><small class="text-muted">  203 Fake St. Mountain View, San Francisco, California, USA</small></p>
+          <button type="button" class="btn btn-secondary btn-sm bg-success text-white"> <i class="fa-solid fa-download "></i> Read more</button>
+    </div>
+  </div>
+  
+  <div class="card col-md-3 p-0" style="width: 20rem;">
+    <img src="images/event-4.jpg.webp" alt="..."style="width: 100%; height: 50%;">
+    <div class="card-body" style="width: 80%; background-color:white; position: relative; left: 20%; margin-top: -20%;">
+      <h5 class="card-title">How To Recover The Cutting Edge</h5>
+          <p class="card-text"> <i class="fa-solid fa-calendar-days"></i><small class="text-muted">   Monday, 8:00 Am - Tuesday, 8:00 Pm</small></p>
+          <p class="card-text text-success"> <i class="fa-solid fa-location-crosshairs"></i><small class=" text-success"> Spring Church</small></p>
+          <p class="card-text"> <i class="fa-solid fa-building"></i><small class="text-muted">  203 Fake St. Mountain View, San Francisco, California, USA</small></p>
+          
+          <button type="button" class="btn btn-secondary btn-sm bg-success text-white"> <i class="fa-solid fa-download "></i> Read more</button>
+    </div>
+  </div>
+  </div>
+<!--end project -->
+
+
+<!-- UPCOMING EVENTS -->
+<blockquote class="blockquote text-center mt-5 bg-light border border-1" >
+  <footer class="blockquote-footer mt-2 mb-0 text-success"><cite title="Source Title">EVENTS</cite></footer>
+  <h1 class="m-0">UPCOMING EVENTS</h1>
+  
+</blockquote>
+
+
+<blockquote class="blockquote text-center" id="blog">
+  <p class="mb-0 text-success">OUR BLOG.</p>
+  <footer class="blockquote-footer"> <cite title="Source Title">RECENT BLOG</cite></footer>
+</blockquote>
+
+
+<div class="row " style="justify-content: space-evenly;">
+  <div class="card" style="width: 20rem;">
+    
+    <h5 class="card-title">Know About Our God Who Created This Universe</h5>
+    <img src="images/image_1.jpg.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card" style="width:20rem;">
+    
+    <h5 class="card-title">Know About Our God Who Created This Universe</h5>
+    <img src="images/image_2.jpg.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+     
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div><div class="card" style="width: 20rem;">
+   
+    <h5 class="card-title">Know About Our God Who Created This Universe</h5>
+    <img src="images/image_3.jpg.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  
+</div>
+<!--end UPCOMING EVENTS -->
+
+
+
+<!-- footer -->
+<div class="row bg-dark text-light" style="padding: 3.5rem;" >
+<div class="col-md-3">
+  
+  <div class="card-body">
+    <h5 class="card-title mb-5">VINEYARD CHURCH</h5>
+    <p class="card-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <div>
+    <a href="#" class="btn btn-primary"><i class="fa-brands fa-twitter"></i></a>
+    <a href="#" class="btn btn-primary"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#" class="btn btn-primary"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+  </div>
+  
+</div>
+<div class="col-md-3">
+ 
+<ul>
+  <h4 class="mb-5">About</h4>
+  <li class="list-group-item mb-3  text-success"> <i class="fa-solid fa-angle-right"></i> Staff</li>
+  <li class="list-group-item text-success mb-3"> <i class="fa-solid fa-angle-right"></i> Beliefs</li>
+  <li class="list-group-item text-success mb-3"><i class="fa-solid fa-angle-right"></i> History</li>
+  <li class="list-group-item text-success mb-3"> <i class="fa-solid fa-angle-right"></i> Mission</li>
+  <li class="list-group-item text-success mb-3"> <i class="fa-solid fa-angle-right"></i> Jobs & wedding</li>
+  <li class="list-group-item text-success mb-3"><i class="fa-solid fa-angle-right"></i>  Wedding and furneral</li>
+  <li class="list-group-item text-success mb-3"><i class="fa-solid fa-angle-right"></i> Fellowship</li>
+</ul>
+</div>
+<div class="col-md-3">
+ 
+  <ul >
+    <h4 class="mb-5">Connect</h4>
+    <li class="list-group-item text-success mb-3 bg-dark"> <i class="fa-solid fa-angle-right"></i> Home group</li>
+    <li class="list-group-item mb-3 text-success"><i class="fa-solid fa-angle-right"></i> Recovery group</li>
+    <li class="list-group-item text-success mb-3"><i class="fa-solid fa-angle-right"></i> Memberships</li>
+    <li class="list-group-item text-success mb-3"><i class="fa-solid fa-angle-right"></i> Childern and students</li>
+    <li class="list-group-item text-success mb-3"><i class="fa-solid fa-angle-right"></i> Voluenteer</li>
+    <li class="list-group-item text-success mb-3" ><i class="fa-solid fa-angle-right"></i> Counselling</li>
+    <li class="list-group-item text-success mb-3"><i class="fa-solid fa-angle-right"></i> Assistence</li>
+  </ul>
+  </div>
+  <div class="col-md-3">
+   
+    <div class="card-body">
+      <h5 class="card-title mb-5 ">SERVICE HOURS</h5>
+      <p class="card-text">Saturday Prayer Meeting — 10:00 am to 11:30 am
+        Sunday Service — 8:30 am to 11:30 am</p>
+    
+    </div>
+  </div>
+
+  <div class="card text-center bg-dark text-light border-0 ">
+    <div class="card-body">
+      <p class="card-text">Copyright ©2023 All rights reserved | This template is made with 
+        <i class="fa-solid fa-shield-heart  text-success"style="font-size:25px;"></i> by Colorlib</p>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

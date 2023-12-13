@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            text-align: center;
+
+        }
+
+        .main {
+            display: flex;
+
+        }
+
+        .box1 {
+            width: 50%;
+            box-sizing: border-box;
+
+        }
+
+        .box2 {
+            width: 50%;
+            box-sizing: border-box;
+
+        }
+
+        img {
+
+            width: 80%;
+        }
+
+        p{
+            /* font-size: 30px; */
+            text-align: justify;
+            padding: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            /* body{  background-color: bisque;} */
+            h1 {
+                color: chocolate;
+                font-size: 70px;
+            }
+
+            .main {
+                display: block;
+            }
+
+            .box1 {
+                width: 100%;
+                word-wrap: break-word;
+            }
+
+            .box1 p{
+                font-size: 20px;
+                text-align: justify;
+            }
+
+            .box2{
+               width: 500px;
+            
+            }
+
+            .box2 img{
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Heading</h1>
+    <div class="main">
+
+        <div class="box1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dicta possimus repudiandae ducimus
+                eligendi! Eum reiciendis dolorem tempora doloremque eaque molestiae. Labore dignissimos officiis nostrum
+                sint, error ipsam dolor harum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dicta possimus repudiandae ducimus
+                eligendi! Eum reiciendis dolorem tempora doloremque eaque molestiae. Labore dignissimos officiis nostrum
+                sint, error ipsam dolor harum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dicta possimus repudiandae ducimus
+                eligendi! Eum reiciendis dolorem tempora doloremque eaque molestiae. Labore dignissimos officiis nostrum
+                sint, error ipsam dolor harum.
+            </p>
+        </div>
+        <div class="box2">
+            <img src="images/mountains-landscape-clouds-nature-wallpaper-preview.jpg" alt="mountain">
+        </div>
+    </div>
+</body>
+
+</html>

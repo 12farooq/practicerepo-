@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+   
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: bisque;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas:
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+            /* grid-template-columns: repeat(4,minmax(250px,1fr));
+            grid-template-rows:auto 200px 200px auto; */
+            gap: 20px;
+            background-color: bisque;
+            padding: 10px;
+            height: 100vh;
+        }
+        .container>div{
+            /* background-color: aqua; */
+            padding: 40px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .nav{
+            
+            background-color: violet;
+            grid-area: nav;
+           
+        }
+        .sidebar{
+            grid-area: sidebar;
+            background-color: slategrey;
+          
+        }
+        .main{
+            grid-area: main;
+            background-color: slateblue;
+            
+        }
+        .content1{
+            grid-area: content1;
+            background-color: slategray;
+           
+        }
+        .content2{
+            grid-area: content2;
+            background-color: slategrey;
+        }
+        .content3{
+            grid-area: content3;
+            background-color: slategrey;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: sienna;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .container{
+               grid-template-columns: 1fr;
+               grid-template-rows: 0.4fr  0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+               grid-template-areas: 
+               "nav"
+               "sidebar"
+               "main" 
+               "content1"
+               "content2"
+               "content3"
+               "footer"
+               ;
+            }
+            
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav" >Navbar</div>
+        <div class="sidebar" >sidebar</div>
+        <div class="main">main</div>
+        <div class="content1">contant-1</div>
+        <div class="content2">contant-2</div>
+        <div class="content3">contant-3</div>
+        <div class="footer"  >footer</div>
+    </div>
+
+<!-- <div class="col-md-4" style="background-color: blueviolet; padding: 5%;"></div>
+<div class="row">
+<div class="col-md-6" style="background-color: rgb(116, 226, 43); padding: 5%;"></div>
+<div class="col-md-6" style="background-color: rgb(238, 117, 73); padding: 5%;"></div>
+</div> -->
+</body>
+</html>

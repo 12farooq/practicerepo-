@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab1{
+            height: 200px;
+            background-color: skyblue;
+        }
+        /* .tab2{display: flex;} */
+
+        .image{
+            height: 200px;
+            width: 20%;
+            float: left;
+            /* margin: 16px 10px; */
+            background-color: orange;
+        }
+       
+        @media (max-width:480px) {
+            .image{
+                width: 100%;
+            }
+        }
+        @media (min-width:1040px) {
+            .image{
+                width: 50%;
+                margin-top: 16px;
+            }
+            .tab2{
+                display: flex;
+            }
+            p{
+                width: 50%;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="tab1"></div>
+   <div class="tab2">
+    <div class="image"></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam dolorem nisi sint vitae. Quo ipsa excepturi nulla reprehenderit soluta adipisci blanditiis corporis dolor alias illo repellendus laboriosam saepe culpa tempora illum magnam aliquid, amet suscipit commodi aperiam sed sunt voluptates! Facilis nobis quisquam exercitationem, repudiandae sint similique voluptatibus ducimus maxime dolor necessitatibus autem facere possimus, excepturi deleniti ullam fugit. Odio earum in ipsa culpa officiis provident ex, quidem atque inventore dolore placeat aperiam, obcaecati nesciunt dignissimos omnis enim ea cum molestiae quae nam similique fuga. Voluptatum, cupiditate quae blanditiis atque maiores nisi illo similique velit debitis. Ullam, maxime rerum!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati dolorum nulla quod saepe aperiam libero et asperiores eaque esse fuga pariatur, reiciendis error, voluptas odio, optio animi itaque cumque.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam dolorem nisi sint vitae. Quo ipsa excepturi nulla reprehenderit soluta adipisci blanditiis corporis dolor alias illo repellendus laboriosam saepe culpa tempora illum magnam aliquid, amet suscipit commodi aperiam sed sunt voluptates! Facilis nobis quisquam exercitationem, repudiandae sint similique voluptatibus ducimus maxime dolor necessitatibus autem facere possimus, excepturi deleniti ullam fugit. Odio earum in ipsa culpa officiis provident ex, quidem atque inventore dolore placeat aperiam, obcaecati nesciunt dignissimos omnis enim ea cum molestiae quae nam similique fuga. Voluptatum, cupiditate quae blanditiis atque maiores nisi illo similique velit debitis. Ullam, maxime rerum!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi obcaecati dolorum nulla quod saepe aperiam libero et asperiores eaque esse fuga pariatur, reiciendis error, voluptas odio, optio animi itaque cumque.
+    </p>
+    
+   </div>
+</body>
+</html>

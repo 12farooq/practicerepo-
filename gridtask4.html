@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 10px;
+        }
+        img{width:100%;}
+        /* .box{
+            border: 2px solid black;
+        } */
+        .box ul{
+            list-style: none;
+            /* background-color: aqua; */
+            display: flex;
+        }
+        .box ul li{
+            padding: 5px;
+            /* border: 1px solid red; */
+            width: fit-content;
+            font-size: 20px;
+            margin: 2px;
+            background-color: rgb(113, 113, 114);
+            border-radius: 12px;
+            color: white;
+            /* font-weight: bolder; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="box">
+            <img src="images/balloons1 (1).jpg" alt="balloons" width="100%">
+            <ul>
+                <li>hot air balloon</li>
+                <li>skyblue</li>
+                <li>red</li>
+                <li>blue</li>
+            </ul>
+        </div>
+        <div class="box">
+            <img src="images/balloons2.jpg" alt="balloons">
+            <ul>
+                <li>train</li>
+                <li>house</li>
+                <li>harborside</li>
+                <li>house</li>
+            </ul>
+        </div>
+
+
+        <div class="box">
+            <img src="images/balloons3.jpg" alt="balloons">
+            <ul>
+                <li>balloon</li>
+                <li>summer</li>
+                <li>bright</li>
+                <li>sun</li>
+            </ul>
+        </div>
+
+
+        <div class="box">
+            <img src="images/balloons4.jpg" alt="balloons">
+            <ul>
+                <li>balloon</li>
+                <li>sky</li>
+                <li>sun</li>
+                <li>bright</li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+</html>

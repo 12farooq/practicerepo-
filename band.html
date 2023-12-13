@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .nav{
+            height: 50px;
+           background-color: black;
+            display: flex;
+          
+        }
+        .nav>button{
+            /* height: 30px; */
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .nav>button:hover {
+            /* height: 30px; */
+            background-color: gainsboro;
+            color: black;
+            /* padding: 5px; */
+            font-size: 20px;
+        }
+        .home{
+           background-image: url('images/la.jpg');
+            height: 100vh;
+            
+            color: aliceblue;
+            
+        }
+        .content{
+            padding: 10%;
+            
+        }
+        .col{
+            display: flex;
+            justify-content: space-between;
+        }
+        h3,h1,h4,h2{text-align: center;}
+        p{
+            text-align: justify;
+        }
+        .grid{
+            border: 2px solid black;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 20% 10% 10% 10% 50%;
+            padding: 30px;
+            padding-bottom: 100px;
+            column-gap: 25px;
+            row-gap: 4px;
+            background-color: black;
+            color: white;
+        }
+        .TOUR{
+            grid-column: 3 / 4;
+        }
+        .september,.october,.november{
+            grid-column: 2 / 5;
+            background-color: white;
+            color: gray;
+            font-size: 20px;
+        }
+        .newyork{
+            grid-column: 2 / 3;
+            background-color: white;
+            color: black;
+            text-align: justify;
+            padding-bottom: 150px;
+        }
+        .paris{
+            grid-column: 3 / 4;
+            background-color: white;
+            color: black
+        }
+        .sanfrasisco{
+            grid-column: 4 / 5;
+            background-color: white;
+            color: black
+        }
+        .footer{
+            text-align: center;
+        }
+        .box{
+            display: flex;
+            border: 1px solid red;
+            justify-content: space-evenly;
+        }
+        .box ul {
+            list-style: none;
+            font-size: 15px;
+        }
+        .form>a{
+            text-decoration: none;
+            height: 100px; 
+            width: 100px;
+             padding: 5px;
+             font-size: 15px;
+             background-color: black;
+             color: white;
+        }
+        input{
+            padding: 15px;
+            margin: 5px;
+        }
+        .bottom ul li,p{ font-size: 30px;
+        padding: 5px;
+        text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+       
+            <button>HOME</button>
+            <button>BAND</button>
+            <button>TOUR</button>
+            <button>CONTACT</button>
+            <button>MORE <i class="fa-solid fa-caret-down"></i> </button>
+        <button style="margin-left: 60%;"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+
+    <div class="home">
+    <h1 style="margin: 0; position: absolute; top: 100%; left: 45%;">california</h1>
+    </div>
+
+    <div class="content">
+        <h1>THE BAND</h1>
+        <h4>WE LOVE MUSIC</h4>
+        <p >We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <div class="col">
+            
+            <div class="photo">
+            <h3>Name</h3>
+            <img src="images/bandmember.jpg" alt="" >
+        </div>
+        <div class="photo">
+            <h3>Name</h3>
+            <img src="images/bandmember.jpg" alt="">
+        </div>
+        <div class="photo">
+            <h3>Name</h3>
+            <img src="images/bandmember.jpg" alt="">
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="grid">
+        
+        <div class="TOUR">
+            <h1 style="margin: 0;">TOUR DATES</h1>
+            <h3 style="margin: 0;"> Remember to book your tickets!</h3>
+        </div>
+            <div class="september">september</div>
+
+            <div class="october">october</div>
+
+            <div class="november">november</div>
+
+            <div class="newyork">
+                <img src="images/newyork.jpg" alt="" style="width: 100%;">
+                New York
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.Praesent tincidunt sed .
+            </div>
+
+            <div class="paris">
+                <img src="images/paris.jpg" alt="" style="width: 100%;">
+                Paris
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.Praesent tincidunt sed tellus ut rutrum sed vitae justo..
+            </div>
+
+            <div class="sanfrasisco">
+                <img src="images/sanfran.jpg" alt="" style="width: 100%;">
+                San Francisco
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                Praesent tincidunt sed tellus ut rutrum sed vitae justo.Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+            </div>
+    </div>
+    <div class="footer">
+        <h1>CONTACT</h1>
+        <i>Fan? Drop a note!</i>
+        <div class="box">
+            <ul>
+                <li> <i class="fa-solid fa-location-dot"></i>Chicago,US</li>
+                <li> <i class="fa-solid fa-phone"></i>Phone: +15249</li>
+                <li><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</li>
+            </ul>
+            <div class="form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="message">
+            <a href="#">send</a>
+        </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <img src="images/map.jpg" alt="" style="width: 100%;">
+        <ul style="list-style: none; display: flex; text-align: center; margin-left: 40%;">
+            <li ><i class="fa-brands fa-square-facebook"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-pinterest-p"></i></li>
+            <li><i class="fa-brands fa-square-snapchat"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-linkedin-in"></i></li>
+        </ul>
+        <p>Powered by w3.css</p>
+    </div>
+</body>
+</html>

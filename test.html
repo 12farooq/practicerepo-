@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            background-color: aqua;
+            height: 200px;
+        }
+        .child{
+            background-color: orange;
+            width: 50%;
+            height: 200px;
+            float: left;
+        }
+
+        @media(max-width:676px){
+            .second{
+                display: flex;
+                flex-direction: column;
+            }
+            .child{
+                width: 100%;
+              padding: 50px 0px;
+              margin: 10px 0px ; 
+            }
+            .para{
+                text-align: justify;
+            }
+            
+        }
+        @media (min-width:1024px) {
+            .second{
+                display: flex;
+            }
+            .para{ width: 50%;
+            margin-left: 20px;
+        text-align: justify;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first"></div>
+        <div class="second">
+            <div class="child">Image</div>
+            <p class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores aperiam iste, libero, praesentium cupiditate mollitia nam ut pariatur nisi totam quidem sed inventore ad officiis, expedita culpa animi et omnis.
+            </p>
+        </div>
+        
+    </div>
+</body>
+</html>

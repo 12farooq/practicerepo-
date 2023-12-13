@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .footer{
+            background-color: rgb(40, 40, 61);
+            display: flex;
+            justify-content: space-between;
+            color: aliceblue;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        .footer ul li{
+            margin: 5px 0px;
+        }
+        
+        .bottom{
+            
+            display: flex;
+            justify-content: space-between;
+            background-color: palegoldenrod;
+        }
+        .bottom ul {
+            list-style: none;
+            float: right;
+            display: flex;
+            
+        }
+        .bottom ul li{
+            margin: 0px 5px;
+        }
+        @media (max-width:480px) {
+            .footer{
+            background-color: saddlebrown;
+            display: flex;
+            flex-direction:column ;
+            justify-content: center;
+            padding:0px;
+           
+        }
+        .footer ul{
+            text-align: center;
+            padding: 0;
+        }
+        .footer ul li{
+            margin: 10px 0px;
+        }
+        h2{
+            text-decoration: underline;
+            color: white;
+            font-weight: bold;
+        }
+        .bottom{
+            word-wrap: break-word;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <ul >
+            <h2>Company</h2>
+            <li>About</li>
+            <li>Company Service</li>
+            <li>Job Opportunities</li>
+            <li>Contact Us</li>
+        </ul>
+        <ul>
+            <h2>Customer</h2>
+            <li>Client Support</li>
+            <li>Price Package</li>
+            <li>Company History</li>
+            <li>Our Process</li>
+        </ul>
+        <ul>
+            <h2>Get In Touch</h2>
+            <li><i class="fa-solid fa-location-pin"></i> &nbsp; 27, Eden walk eden center,orchard view,paris,France</li>
+           
+            <li><i class="fa-solid fa-phone-volume"></i>  &nbsp; +1 234567890</li>
+            <li><i class="fa-solid fa-envelope"></i>  &nbsp; info@yourdomain.com</li>
+        </ul>
+        <ul>
+            <h2>Follow Us On Instagram</h2>
+            <li><i class="fa-brands fa-square-instagram"></i> &nbsp; FOLLOW INSTAGRAM</li>
+        </ul>
+      
+    </div>
+    <div class="bottom">
+        <img src="images/download.png" alt="icon" style="height: 50px;width: 50px;"> 
+        <p>
+            2021 Litho is proudly powered by ThemeZaa
+        </p>
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-pinterest"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{
+            font-weight: normal;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .nav{
+            display: flex;
+            background-color: white;
+            padding: 5px ;
+            justify-content: space-between;
+            position: sticky;
+            top: 1px;
+            
+        }
+        .nav>h1{
+            font-weight: normal;
+            cursor: pointer;
+            font-size: 25px;
+            opacity: .7;
+        }
+        .nav>h1:hover{background-color: gray;}
+        .header{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            padding: 25px;
+        }
+        .bar{
+            border-bottom: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        .bar>a{
+            font-size: 20px;
+            text-decoration: none;
+            padding: 5px 15px;
+           
+            color: black;
+        }
+        .bar>a:hover{
+            background-color: rgb(121, 118, 115);
+            color: white;
+        }
+        .about{
+            padding: 30px 20%;
+            border: 2px solid black;
+        }
+        .about>h2{
+            text-align: center;
+            font-size: 30px;
+        }
+        .about>h3{ text-align: center;
+        color: gray;}
+        .about>p{ 
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .footer{
+            /* border: 1px solid red; */
+            display: flex;
+           padding: 30px;
+        }
+        .footer>div{
+            padding: 10px;
+            /* border: 1px solid red; */
+        }
+        .footer>.con1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-size: 16px;
+        }
+        
+        .con2>.sub1{ border-bottom: 2px solid gray;
+        }
+        .con3>p>span{
+            background-color: rgb(80, 79, 77);
+            padding: 5px;
+            line-height: 40px;
+            margin: 0 10px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="nav">
+        <h1 class="item1"><i class="fa-solid fa-bars"></i></h1>
+        <h1 class="item2">My Food</h1>
+        <h1 class="item3">Mail</h1>
+    </div>
+
+
+    <div class="header">
+        <div class="cont1">
+            <img src="images/sandwich.jpg" alt="" style="width: 100%;">
+            <h1>The Perfect Sandwich, A Real NYC Classic</h1>
+            <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="cont2">
+            <img src="images/steak.jpg" alt=""  style="width: 100%;">
+            <h1>Let Me Tell You About This Steak</h1>
+            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum</p>
+        </div>
+        <div class="cont3">
+            <img src="images/cherries.jpg" alt=""  style="width: 100%;">
+           <h1> Cherries, interrupted</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.
+
+            What else?</p>
+        </div>
+        <div class="cont4">
+            <img src="images/wine.jpg" alt=""  style="width: 100%;">
+            <h1>Once Again, Robust Wine and Vegetable Pasta</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="cont5">
+            <img src="images/popsicle.jpg" alt=""  style="width: 100%;">
+            <h1>All I Need Is a Popsicle</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </div>
+        <div class="cont6">
+            <img src="images/salmon.jpg" alt=""  style="width: 100%;">
+            <h1>Salmon For Your Skin</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> 
+        </div>
+        <div class="cont7">
+            <img src="images/sandwich (1).jpg" alt=""  style="width: 100%;">
+            <h1>The Perfect Sandwich, A Real Classic</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> 
+        </div>
+        <div class="cont8">
+            <img src="images/croissant.jpg" alt=""  style="width: 100%;">
+            <h1>Le French</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> 
+        </div>
+    </div>
+
+
+    <div class="bar">
+        <a href="#"><i class="fa-solid fa-angles-left"></i></a>
+        <a href="#" style="background-color: black; color: white;">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#"><i class="fa-solid fa-angles-right"></i></a>
+    </div>
+
+
+    <div class="about">
+        <h2>About Me, The Food Man</h2>
+        <img src="images/chef.jpg" alt="">
+        <h2>I am Who I Am!</h2>
+        <h3>With Passion For Real, Good Food</h3>
+        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="con1">
+            <h2>FOOTER</h2>
+           <p> Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+           </div>
+
+        <div class="con2">
+            <h2>BLOG POSTS</h2>
+            <div class="sub1">
+                <img src="images/workshop.jpg" alt="2"  style="width: 20%;">
+                Lorem
+                Sed mattis nunc
+            </div>
+            <div class="sub2">
+                <img src="images/rock.jpg" alt="1"  style="width: 20%;">
+                Lorem
+                Sed mattis nunc
+            </div>
+        </div>
+
+        <div class="con3">
+            <h2>POPULAR TAGS</h2>
+            <p>
+                <span>Travel</span>
+                <span>New York</span>
+                <span>London</span>
+                <span>IKEA</span>
+                <span>NORWAY</span>
+                <span>DIY</span>
+                <span>Ideas</span>
+                <span>Baby</span>
+                <span>Family</span>
+                <span>News</span> 
+                <span> Clothing</span>
+                <span>Shopping</span>
+                <span> Sports</span>
+                <span>Games</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

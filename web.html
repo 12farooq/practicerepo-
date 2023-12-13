@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mydiv {
+            border: 2px solid red;
+
+            text-align: inline;
+            background-color: tomato;
+            color: white;
+
+            margin: 5px;
+            padding: 5px;
+            list-style: inside;
+        }
+
+        .mydiv li {
+            float: left;
+            margin-left: 30px;
+        }
+
+        .mydiv ul {
+            list-style-type: none;
+            margin-top: -8px;
+        }
+
+        .bird {
+            height: 50px;
+            width: 50px;
+        }
+
+
+
+        .myDiv {
+            /* border: 1px solid black; */
+            height: 80px;
+            width: auto;
+        }
+
+        .imageDiv {
+            /* border: 1px solid red; */
+            height: 78px;
+            width: 70px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+
+        .myDiv .imageDiv .myBird {
+            /* border: 1px solid green; */
+            height: 75px;
+            width: 67px;
+        }
+
+        .myDiv .inputDiv {
+            /* border: 1px solid red; */
+            height: 78px;
+            width: 300px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .myDiv .inputDiv .formDiv {
+            /* border: 1px solid green; */
+            margin-top: 27px;
+        }
+        .myDiv .inputDiv2 {
+            /* border: 1px solid red; */
+            height: 78px;
+            width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .myDiv .inputDiv2 .formDiv2 {
+            /* border: 1px solid green; */
+            margin-top: 27px;
+            width: 400px;
+        }
+        .paragraph{
+            border: 1px solid red;
+        height: 500px;
+        width: 900px
+        
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mydiv">
+
+        <ul>
+            <li>home</li>
+            <li>upload file</li>
+            <li>premium</li>
+            <li>news</li>
+            <li>community</li>
+            <li>faq</li>
+            <li>free signup</li>
+
+        </ul>
+
+
+
+    </div>
+    <div>
+        <img src="bird-thumbnail.jpg" alt="bird" class="bird">
+        <form action="">
+            <label for="username" class="username"> user name</label>
+            <input type="text" name="username" id="username">
+            <label for="passward" class="password"> passward</label>
+            <input type="password" name="password" id="password">
+            <button>signup</button>
+        </form>
+    </div>
+
+
+    <div class="myDiv">
+        <div class="imageDiv">
+            <img src="bird-thumbnail.jpg" alt="bird" class="myBird">
+        </div>
+        <div class="inputDiv">
+            <form action="#">
+                <div class="formDiv">
+                    <label for="username" class="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+            </form>
+        </div>
+
+        <div class="inputDiv2">
+            <form action="#">
+                <div class="formDiv2">
+                    <label for="username" class="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <input type="submit" class="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        
+        
+    </div>
+    <div class="paragraph">
+        <p>
+DO you know audio and video file upload automatically? after upload?
+        </p>
+    </div>
+</body>
+
+</html>

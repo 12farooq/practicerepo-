@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        form{
+            border: 1px solid red;
+            height: 450px;
+            background-color: rgb(208, 208, 109);
+            width: 400px;
+            text-align: center;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+
+        }
+        label{
+            margin-top: 10px;
+        }
+        input{
+            margin-top: 10px;
+        }
+        button{
+            background-color: yellowgreen;
+        margin-top: 10px;}
+    </style>
+</head>
+<body>
+    <form action="button1.html">
+        <h1>Personal Detail</h1>
+        <label for="Name">Name:</label>
+        <input type="text" ><br>
+
+        <label for="password">password</label>
+        <input type="password" ><br>
+
+        <label for="email">Email id:</label>
+        <input type="email" ><br>
+
+        <label for="Gender">Gender</label>
+        <input type="radio" name="gender"><label for="male">male</label>
+        <input type="radio" name="gender"><label for="female">female</label><br>
+
+        <label for="contant">contact</label>
+        <input type="number" ><br>
+
+        <h3>Education qualification</h3>
+        <label for="degree">Degree:</label>
+        <select name="" id="">
+            <option value="">science</option>
+            <option value="">commerese</option>
+            <option value="">humanities</option>
+        </select><br>
+
+        <label for="engineering">engineering branch</label>
+        <select name="" id="">
+            <option value="IT">IT</option>
+            <option value="CSE">CSE</option>
+            <option value="ME">Mechanical</option>
+            <option value="ECE">ECE</option>
+            <option value="CHE">CHEMICAL</option>
+             <option value="EE">ELECTRICAL</option>
+        </select><br>
+
+        <label for="hobbies">hobbies</label>
+        <input type="checkbox"><label for="chess">playing chess</label>
+        <input type="checkbox"><label for="book">Reading book</label><br>
+
+        <label for="address">address</label>
+        <input type="text-area" ><br>
+
+        <label for="resume">Attach Resume</label>
+        <input type="file"><br>
+        <button type="submit">submit<i class="fa-solid fa-arrow-right-long"></i></button>
+    </form>
+    
+  
+</body>
+</html>

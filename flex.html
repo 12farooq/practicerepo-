@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column1{
+            display: flex;
+        }
+        .box1{
+            height: 100px;
+            width: 50%;
+            background-color: aqua;
+            box-sizing: border-box;
+            margin: 12px;
+        }
+        .box2{
+            width: 50%;
+            background-color: olivedrab;
+            margin: 12px;
+        }
+        .column2{
+            display: flex;
+            
+        }
+        .sub{
+            width: 50%;
+            height: 400px;
+        }
+        .box3{  height: 70%;
+           
+            background-color: orange;
+            box-sizing: border-box;
+            margin: 12px; 
+        }
+        .box4{  
+            height: 30%;
+            background-color: orangered;
+            box-sizing: border-box;
+            margin: 12px;
+        }
+        .box5{  
+            height: 400px;
+            width: 50%;
+            background-color: orchid;
+            box-sizing: border-box;
+            margin: 12px;
+        }
+        @media (max-width:667px) {
+            .column1{
+                display: flex;
+                flex-direction: column;
+            }
+            .column2{
+                /* width: 100%; */
+                display: flex;
+                flex-direction: column;
+            }
+            .box1{
+                height: 100px;
+                width: 100%;
+            }
+            .box2{
+                height: 100px;
+                width: 100%;
+            }
+            .box3{
+                height: 200px;
+                width: 100%;
+            }
+            .box4{
+                height: 200px;
+                width: 100%;
+            }
+            .sub{
+                width: 100%;
+            }
+            .box5{
+                height: 200px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="column1">
+    <div class="box1">item1</div>
+    <div class="box2">item2</div>
+</div>
+<div class="column2">
+    <div class="sub">
+    <div class="box3">item3</div>
+    <div class="box4">item4</div>
+</div>
+    <div class="box5">item5</div>
+</div>
+</body>
+</html>

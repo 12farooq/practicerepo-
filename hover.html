@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+a {
+    border: 1px solid red;
+    font-weight: 500;
+   margin-top: 100px;
+    padding: 10px;
+    background-color: rgb(145, 96, 61);
+
+
+}
+a:hover{
+    background-color: aquamarine;
+    color: brown;
+border-radius: 3%;
+font-family: cursive;
+text-decoration:underline ;
+}
+button{
+    border: 1px solid red;
+    font-weight: 500;
+   margin-top: 100px;
+    padding: 10px;
+    background-color: rgb(145, 96, 61);
+    transform:skewY(20deg);
+}
+button:hover{
+    background-color: aliceblue;
+    color:black;
+    border-radius: 10%;
+    transition: background-color 1s;
+}
+.a{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    background-color: aliceblue;
+    
+
+}
+.a:hover{
+    border: 1px solid red;
+    background-color: rgb(28, 111, 185);
+    transition: height 2s,background-color 2s;
+    height: 500px;
+    transform: skew(20deg, 40deg);
+    
+}
+.b{
+    height: 300px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: orange;
+    border-radius: 20%;
+    text-align: center;
+}
+.b:hover{
+    transform: rotateY(360deg);
+    transition: transform 9s, color 3s;
+    background-color: aqua;
+    color: brown;
+    
+}
+    </style>
+</head>
+<body>
+    <a href="#">sign up</a>
+    <button>sign in</button>
+    <div class="a"> </div>
+    <div class="b">
+        <h1>CSS 3D Transforms</h1>
+        <p>CSS also supports 3D transformations.
+
+            Mouse over the elements below to see the difference between a 2D and a 3D transformation</p>
+    </div>
+</body>
+</html>

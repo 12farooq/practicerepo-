@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 15% auto;
+            grid-template-rows: 10vh 90vh;
+            grid-template-areas: 
+            "nav nav"
+            "sidebar main";
+            gap: 2px;
+            font-size: 40px;
+        }
+        /* .grid-container>div{
+           
+        } */
+        .nav{
+            grid-area: nav;
+            border: 2px solid black;
+            background-color: skyblue;
+        }
+        .sidebar{
+            grid-area: sidebar;
+            border: 2px solid black;
+            background-color: orange;
+        }
+        .main{
+            grid-area: main;
+            border: 2px solid black;
+            background-color: bisque;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows:auto auto;
+            /* grid-template-areas: 
+            "nav nav"
+            "sidebar main"; */
+            row-gap: 20px; 
+            column-gap: 10px;
+            padding: 20px;
+            
+        }
+        .item1{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="nav">nav</div>
+        <div class="sidebar">sidebar</div>
+        <div class="main">
+            <div class="item1">
+                <h6>k</h6>
+                
+            </div>
+            <div class="item1">b</div>
+            <div class="item1">c</div>
+            <div class="item1">d</div>
+            <div class="item1">e</div>
+            <div class="item1">f</div>
+            <div class="item1">g</div>
+            <div class="item1">h</div>
+        </div>
+    </div>
+</body>
+</html>

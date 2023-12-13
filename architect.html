@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Georgia, 'Times New Roman', Times, serif ;
+            letter-spacing: 3px;
+        }
+        .nav{
+            border-bottom: 2px solid black;
+            /* background-color: salmon; */
+            padding: 8px 16px;
+            /* height: 80px; */
+        }
+
+        .nav>a{
+            
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .nav>a:hover{
+            background-color: antiquewhite;
+        }
+        .contact,.about,.pro{
+            float: right;
+            
+        }
+        .pro{
+          margin: 0px 25px;
+        }
+        .main{
+            border-bottom: 2px solid black;
+            padding: 50px 0px;
+        }
+        .heading{
+            display: flex;
+            position:absolute;
+            top: 50%;
+            left: 38%;
+        }
+        .heading>h1{
+            /* border: 1px solid black; */
+            background-color: rgb(34, 32, 32);
+            color: white;
+            font-size: 40px;
+            width: fit-content;
+            padding: 10px;
+            /* margin: 0px; */
+        }
+        .heading>h2{
+            color: white;
+            font-size: 40px;
+            width: fit-content;
+            padding: 10px;
+        }
+        .project{
+            display: grid;
+            grid-template-columns:25% 25% 25% 25% ;
+            grid-template-rows: auto auto;
+            gap: 20px;
+           padding: 30px 10%;
+           border-bottom: 2px solid black;
+        }
+       p:not(.container1>p,.con>p){
+        position: absolute;
+        color: aliceblue;
+        background-color: black;
+        margin: 0;
+        padding: 11px;
+       }
+       .team{
+        display: grid;
+        grid-template-columns: 25%  25%  25%  25% ;
+        grid-template-rows: auto;
+        gap:20px ;
+        padding: 50px;
+       }
+       .ab{
+        border-bottom: 2px solid black;
+        padding: 20px;
+       }
+       button{
+        height: 50px;
+        width: 100%;
+        background-color: grey;
+        color: black;
+        font-size: 20px;
+        border: none;
+       }
+       .con{
+        padding: 50px;
+        
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="" class="br">B R Architects</a>
+        <a href=""class="contact">Contact</a>
+        <a href="" class="pro">Projects</a>
+        <a href=""class="about">About</a>
+        
+    </div>
+
+    <div class="main">
+        <div class="heading"><h1>B R </h1><h2> Architects</h2></div>
+        <img src="images/architect.jpg" alt="" style="width: 100%;">
+    </div>
+
+    <div class="project">
+        <div class="item1">
+            <p>Summer House</p>
+            <img src="images/house5.jpg" alt="house2" style="width: 100%;">
+        </div>
+        <div class="item2">
+            <p>Brick House</p>
+            <img src="images/house2.jpg" alt="house2" style="width: 100%;">
+        </div>
+        <div class="item3">
+            <p>Renovated</p>
+            <img src="images/house3.jpg" alt="house2" style="width: 100%;">
+        </div>
+        <div class="item4">
+            <p>Barn House</p>
+            <img src="images/house4.jpg" alt="house2" style="width: 100%;">
+        </div>
+        <div class="item5">
+            <p>Summer House</p>
+            <img src="images/house4.jpg" alt="house2" style="width: 100%;">
+        </div>
+        <div class="item6">
+            <p>Barn House</p>
+            <img src="images/house3.jpg" alt="house2" style="width: 100%;">
+        </div>
+        <div class="item7">
+            <p>Renovated</p>
+            <img src="images/house5.jpg" alt="house2" style="width: 100%;">
+        </div>
+        <div class="item8">
+            <p>Brick House</p>
+            <img src="images/house2.jpg" alt="house2" style="width: 100%;">
+        </div>
+    </div>
+
+    <div class="ab">
+        <h1>About</h1>
+        <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam fugit voluptatum nihil modi dicta facilis architecto ab minima quas quod neque, error illo nam earum asperiores blanditiis voluptates autem ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi, fugit sed similique libero aut necessitatibus porro ullam cumque enim soluta, eum ut amet, a minima iste maxime omnis ipsum.</section>
+        <div class="team">
+            <div class="container1">
+                <img src="images/team2.jpg" alt=""  style="width: 100%;">
+                <h3>John Doe</h3>
+                <h4>CEO & Founder</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+
+            <div class="container1">
+                <img src="images/team1.jpg" alt=""  style="width: 100%;">
+                <h3>John Doe</h3>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="container1">
+                <img src="images/team3.jpg" alt=""  style="width: 100%;">
+                <h3>Mike Ross</h3>
+                <h4>
+                    Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+            <div class="container1">
+                <img src="images/team4.jpg" alt=""  style="width: 100%;">
+                <h3>Dan Star</h3>
+                <h4>Architect</h4>
+                <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                <button>Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="con">
+        <h1>Contact</h1>
+        <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us</p>
+        <address style="color: slategray; font-weight: bold;">Catering Service, 42nd Living St, 43043 New York, NY</address>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <input type="text" placeholder="Name" style="padding: 20px; width: 90%; border: 1px solid gray ;">
+        <input type="number"  placeholder="How many people" style="padding: 20px; width: 90%; border: 1px solid gray ; margin: 10px 0;">
+        <input type="datetime-local"style="padding: 20px; width: 90%;border-bottom: 1px solid gray ; margin: 10px 0;">
+        <input type="text"   placeholder="message / special requirement" style="padding: 20px; width: 90%;border: 1px solid gray ; margin: 10px 0;">
+        <a href="#" style="height: 100px; width: 100px; background-color: gray; color: white; text-decoration: none; padding: 20px;;">SENDMESSAGE</a>
+        
+    </div>
+    <img src="images/map.jpg" alt="map"  style="width: 100%;">
+</body>
+</html>

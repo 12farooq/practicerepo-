@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+          border: 2px solid red;
+          word-wrap: break-word;
+          width: fit-content;
+          position: absolute;
+          top: 0%;
+          left: 25%;
+          color: white;
+         padding: 10px;
+         border-radius: 5%;
+        }
+        
+        .space{
+            width: 90%;
+          margin: 10px;
+            /* background-color: rgb(67, 67, 137); */
+            height: 20px;
+
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 0%;
+ 
+        }
+        h4{
+            text-align: center;
+        }
+        button{
+            width: 90%;
+            color: black;
+            
+        }
+        
+        label{
+            /* text-decoration: underline; */
+            margin: 10px;
+        }
+        a{
+            text-decoration: none;
+        }
+    
+    </style>
+</head>
+<body style="background-color: rosybrown;">
+    <div class="content">
+    <h1>Registration Form </h1>
+    <h4>Please fill with required information</h4>
+     <form action="#">
+    <label for="firstname">Enter Your First Name:</label>
+    <input type="text" class="space" required><br>
+    <label for="lastname">Enter Your Last Name:</label>
+    <input type="text" class="space"  required><br>
+    <label for="email">Enter Your Email ID:</label>
+    <input type="email" name="email" class="space" required><br>
+    <label for="passward">Create A New Passward:</label>
+    <input type="password" name="passward" class="space" required><br>
+<hr size="3" color="gray" width="90%">
+    <label for="account">Account For (required)</label><br>
+    <input type="radio" id="Personal" name="Personal" >
+    <label for="personal">Personal</label><br>
+    <input type="radio" id="Business" name="Personal"  value="Business" >
+    <label for="Business">Business</label><br>
+<hr size="3" color="gray" width="90%">
+    <label for="photo">Upload A Profile Photo</label>
+    <input type="file" class="space"><br>
+    <label for="photo">Input your age(Years)</label>
+    <input type="number" class="space"><br>
+    <label for="about">How did you hear about us?</label>
+    
+    <select name="about" id="" class="space">
+        <option value="selectone">(select one)</option>
+        <option value="whatsapp">whatsapp</option>
+        <option value="youtube">youtube</option>
+        <option value="facebook">facebook</option>
+        <option value="linkdin">linkdin</option>
+    </select><br>
+    <label for="bio">Provide me your bio:</label>
+    <input type="text" class="space"><br>
+    <label for="address">Address</label>
+    <input type="text-area" class="space"><br>
+    <input type="checkbox">
+    <label for="term">I accept the <a href="#">terms and condition</a></label><br>
+    <button style="margin: 10px; height: 30px; ">submit</button>
+</form>
+</div>
+</body>
+</html>

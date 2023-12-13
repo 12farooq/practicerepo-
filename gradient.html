@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color gradient</title>
+    <style>
+        div{
+            height: 40%;
+            width: 30%;
+            border: 1px solid red;
+            background-image: linear-gradient(to right, pink,red,yellow,green);
+            /* box-sizing: border-box;
+            transition: background-image 5s;
+            border-radius: 10%; */
+            position: relative;
+            animation: mymove 10s infinite;  
+            transition: animation 3s;  
+        } 
+        @keyframes mymove {
+                from {top: 0px;}
+                to {top: 200px;}
+            }
+        h1{
+            /* color: aliceblue; */
+            font-size: 5em;
+            margin: 0px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div><h1> multi color</h1></div>
+</body>
+</html>
